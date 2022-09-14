@@ -5,6 +5,14 @@
 
 let backpackContents = ["piggy", "headlamp", "pen"];
 
+let longItems = backpackContents.find(function (item) {
+    if (item.length >= 5) {
+      return item;
+    }
+  });
+  console.log("longItems:", longItems);
+ 
+
 console.log(backpackContents);
 
 // backpackContents.forEach(function (item) {
@@ -12,9 +20,3 @@ console.log(backpackContents);
 //   console.log(item);
 // });
 
-// let longItems = backpackContents.find(function (item) {
-//   if (item.length >= 5) {
-//     return item;
-//   }
-// });
-// console.log("longItems:", longItems);
