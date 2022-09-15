@@ -14,7 +14,9 @@ const arrayExercise = ["legal pad", "tape", "telephone", "desk", 77, "candle", "
 
 // arrayExercise.sort();
 
-const foundItem = arrayExercise.find(item => item === "telephone");
+// const foundItem = arrayExercise.find(item => item === "telephone");
 
-console.log("found item" ,foundItem);
+let remove = "telephone";
+arrayExercise.splice(arrayExercise.indexOf(remove), 1);
+console.log('Array with "$(remove)" reoved:', arrayExercise);
 
