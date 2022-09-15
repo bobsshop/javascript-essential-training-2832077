@@ -8,4 +8,13 @@
  * - Remove the item you found using the find method from the array.
  */
 
+const arrayExercise = ["legal pad", "tape", "telephone", "desk", 77, "candle", "monitor"];
+
+// arrayExercise.unshift(arrayExercise.pop());
+
+// arrayExercise.sort();
+
+const foundItem = arrayExercise.find(item => item === "telephone");
+
+console.log("found item" ,foundItem);
 
